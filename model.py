@@ -2,7 +2,7 @@ from keras.models import Model
 from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Reshape, Permute, Activation
 from tensorflow.keras.layers import BatchNormalization
 from keras import backend as K
-def r2_unet(input_shape=(256, 256, 1), num_classes=7):
+def r2_unet(input_shape=(48, 48, 1), num_classes=7):
     inputs = Input(input_shape)
 
     # Encoding path
